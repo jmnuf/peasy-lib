@@ -4,10 +4,16 @@
   "main": "./dist/esm/index.mjs",
   "module": "dist/esm/index.mjs",
   "exports": {
-    "require": "./dist/cjs/index.cjs",
-    "import": "./dist/esm/index.mjs"
+    "require": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/cjs/index.cjs"
+    },
+    "import": {
+      "types": "./dist/types/index.d.ts",
+      "default": "./dist/esm/index.mjs"
+    }
   },
-  "typings": "dist/types/index.d.ts",
+  "types": "dist/types/index.d.ts",
   "license": "UNLICENSED",
   "description": "An easy peasy UI binding library.",
   "author": "Jürgen Wenzel",
